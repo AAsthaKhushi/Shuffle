@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Varela+Round&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+body{
+    background-color: #F8F4EC;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: "Baskervville SC", serif;
+}
+h2{
+    color: #402B3A;
+    font-family: "Baskervville SC", serif;
+}
+#swift{
+    position: relative;
+    left: 20%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color:#402B3A;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 64px;
+    height: 64px;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 75vh;
+    background-color: #402B3A;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./bg3.jpg');
+}
+.bottom{
+    position: sticky;
+    height:90px;
+    background-color: #402B3A;
+    color: white;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 9px;
+}
+.icons i{
+     cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top:70px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 34px;
+    font-size: smaller;
+}
+.songItem img{
+    width: 43px;
+    max-width: 0 25px;
+    border-radius: 50%;
+}
+.timestamp{
+    margin: 0 20px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: "Baskervville SC", serif;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+.songInfo img{
+    padding-right: 10px;
+    opacity:0;
+    transition: opacity 0.5s ease-in;
+}
+#masterSongName{
+        position: relative;
+        bottom: 17px;
+    }
+
+@media only screen and (min-width: 480px) {
+    body {
+          background-color: #FFE6E6;
+    }
+    .songInfo{
+        position: absolute;
+        left: 5vw;
+        bottom: 0;
+        padding-bottom: 5px;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 450) {
+    body {
+          background-color: #FFE6E6;
+    }
+}
